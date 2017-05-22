@@ -101,7 +101,7 @@ class _XmlRemote(object):
     return url
 
   def ToRemoteSpec(self, projectName):
-    url = self.resolvedFetchUrl.rstrip('/') + '/' + projectName
+    url = self.resolvedFetchUrl.rstrip('/') + '/' + projectName + '.git'
     remoteName = self.name
     if self.remoteAlias:
       remoteName = self.remoteAlias
